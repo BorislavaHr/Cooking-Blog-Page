@@ -1,0 +1,114 @@
+// main: ./_elements.scss
+
+header {
+  background-color: #850E35;
+
+  .logo-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 0;
+  
+    @media screen and (min-width: 769px) {
+      padding: 1vh 1vw;
+    }
+  
+    @media screen and (min-width: 1000px) and (max-width: 1450px) {
+      padding: 1vh 2vw;
+    }
+  
+    @media screen and (min-width: 1048px) {
+      padding: 0.7vh 0;
+    }
+  
+    .register-btn {
+      padding: 0vh 3vw;
+      background-color: #FFECEC;
+      border-radius: 60px;
+  
+      @media screen and (min-width: 769px) {
+        padding: 0.3vh 3vw;
+      }
+      @media screen and (min-width: 1048px) {
+        padding: 0.3vh 2.5vw;
+      }
+  
+      .btn {
+        font-size: 4.5vw;
+        font-weight: bold;
+        color: #850E35 !important;
+        text-transform: uppercase;
+      
+        @media screen and (min-width: 769px) {
+          font-size: 1.7vw;
+        }
+        @media screen and (min-width: 1048px) {
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+
+  .logo__img img {
+    width: 24vw;
+  
+    @media screen and (min-width: 769px) {
+      width: 11vw;
+    }
+  
+    @media screen and (min-width: 1048px) {
+      width: 8vw;
+      margin-right: 4vw;
+    }
+  }
+
+  .header-banner {
+    position: relative;
+    height: 500px;
+    @media screen and (min-width:390px) {
+      height: 700px;
+    }
+    @media screen and (min-width:550px) {
+      height: 1000px;
+    }
+    @media screen and (min-width:550px) {
+      height: 1000px;
+    }
+    @media screen and (min-width:769px) {
+      height: 350px;
+    }
+    @media screen and (min-width:1048px) {
+      height: 450px ;
+    }
+    @media screen and (min-width:1500px) {
+      height: 600px ;
+    }
+  
+    .banner {
+      background: url(../assets/MobileTest.png) no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+  
+      @media screen and (min-width: 769px) {
+        background: url(../assets/CoverTablet.png) no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
+  
+      @media screen and (min-width: 1048px) {
+        background: url(../assets/CoverDesktop.png) no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

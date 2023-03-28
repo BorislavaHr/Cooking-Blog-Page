@@ -1,0 +1,31 @@
+// out: ./styles.css, compress: true, sourceMap: true, autoprefixer: last 5 versions, groupmedia: true
+
+@import "elements";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFF5E4;
+    color: #850e35;
+}
+
+//customize container XL
+.container-xl {
+    @media screen and (min-width: 1048px) {
+        max-width: 1100px;
+        width: 80%;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1300px;
+    }
+    @media screen and (max-width: 1500px) and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+    @media screen and (min-width: 769px) {
+        width: 95%;
+    }
+}

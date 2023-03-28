@@ -1,0 +1,66 @@
+// main: ./_elements.scss
+
+// social media icons 
+section.social-media-icons{
+    width: 100%;
+    margin-top: 6vh;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14.4px;
+    font-family: "Roboto", sans-serif;
+    @media screen and (min-width: 769px) {
+        margin-top: 10vh;
+    }
+
+    .icons-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        border-top: 1px solid #850e35; 
+        border-bottom: 1px solid #850e35; 
+        padding: 2vh 0; 
+
+        img {
+            max-height: 6vh;
+            width: auto;
+            transition: .3s ease;
+
+            @media screen and (min-width: 769px) {
+                max-height: 5vh;
+            }
+            @media screen and (min-width: 1048px) {
+                max-height: 6vh;
+            }
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }  
+}
+
+//footer menu
+.footer-menu {
+    h4 {
+        font-weight: 600;
+        @media screen and (max-width: 769px) {
+            font-size: 5.5vw;
+        }
+    }
+    p {
+        margin-bottom: 0.5vh;
+    }
+    p a {
+        text-decoration: none;
+        color: #850e35;
+        font-size: 4.5vw;
+        @media screen and (min-width: 769px) {
+            font-size: unset;
+        }
+    }
+    p a:hover {
+        text-decoration: underline;
+    }
+}
+
